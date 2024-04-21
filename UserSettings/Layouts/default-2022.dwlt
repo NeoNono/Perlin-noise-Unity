@@ -338,7 +338,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: cc590000
     m_LastClickedID: 22988
-    m_ExpandedIDs: 00000000c259000000ca9a3b
+    m_ExpandedIDs: 00000000c2590000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -511,18 +511,18 @@ MonoBehaviour:
       m_ExpandedIDs: 2cfbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: Plane
-        m_OriginalName: Plane
+        m_Name: 
+        m_OriginalName: 
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: 22910
+        m_UserData: 0
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 0
+        m_OriginalEventType: 11
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 4}
       m_SearchString: 
@@ -862,9 +862,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -185.08342, y: -896.2635, z: 68.48579}
+    m_Target: {x: 9.312734, y: 478.69824, z: -0.44344008}
     speed: 2
-    m_Value: {x: -185.08342, y: -896.2635, z: 68.48579}
+    m_Value: {x: 9.312734, y: 478.69824, z: -0.44344008}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -910,13 +910,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.3001131, y: -0.6466959, z: 0.3083568, w: 0.6295135}
+    m_Target: {x: 0.7113331, y: -0.0021085504, z: 0.0021340079, w: 0.70284796}
     speed: 2
-    m_Value: {x: 0.30016494, y: -0.6468076, z: 0.30841005, w: 0.6296222}
+    m_Value: {x: 0.7102784, y: -0.00211175, z: 0.0021308437, w: 0.7039145}
   m_Size:
-    m_Target: 1733.2351
+    m_Target: 868.7764
     speed: 2
-    m_Value: 1733.2351
+    m_Value: 909.71356
   m_Ortho:
     m_Target: 0
     speed: 2

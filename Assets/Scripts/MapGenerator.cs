@@ -17,7 +17,7 @@ public class MapGenerator : MonoBehaviour
     [SerializeField] private float noiseScale;
     [SerializeField] private int octaves;
     [Range(0f, 1f)]
-    [SerializeField] private float persistance;
+    [SerializeField] private float persistence;
     [SerializeField] private float lacunarity;
     [SerializeField] private Noise.NoiseAlgorithmImplementation implementation;
     public bool autoUpdate = true;
@@ -38,7 +38,7 @@ public class MapGenerator : MonoBehaviour
     
     public void GenerateMap()
     {
-        float[,] noiseMap = Noise.GenerateNoiseMap(MapChunkSize, MapChunkSize, seed, noiseScale, octaves, persistance, lacunarity, offset, implementation);
+        float[,] noiseMap = Noise.GenerateNoiseMap(MapChunkSize, MapChunkSize, seed, noiseScale, octaves, persistence, lacunarity, offset, implementation);
 
         Color[] colorMap = GenerateColorMap(noiseMap);
 
