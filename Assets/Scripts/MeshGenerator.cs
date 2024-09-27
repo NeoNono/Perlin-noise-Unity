@@ -2,8 +2,11 @@ using UnityEngine;
 
 public static class MeshGenerator
 {
+    public static class MeshGenerator
+{
     public static MeshData GenerateTerrainMesh(float[,] heightMap, float heightMultiplier, AnimationCurve heightCurve, int levelOfDetail)
     {
+        // Store width and height in variables to avoid redundant GetLength() calls
         int width = heightMap.GetLength(0);
         int height = heightMap.GetLength(1);
         float topLeftX = (width - 1) / 2f;
@@ -21,19 +24,21 @@ public static class MeshGenerator
             {
                 meshData.vertices[vertexIndex] = new Vector3(topLeftX - x, heightCurve.Evaluate(heightMap[x, y]) * heightMultiplier, topLeftZ - y);
                 meshData.uvs[vertexIndex] = new Vector2((float)x / width, (float)y / height);
-                
+
                 if (x < width - 1 && y < height - 1)
                 {
                     meshData.AddTriangle(vertexIndex, vertexIndex + verticesPerLine, vertexIndex + verticesPerLine + 1);
                     meshData.AddTriangle(vertexIndex, vertexIndex + verticesPerLine + 1, vertexIndex + 1);
                 }
-                
+
                 vertexIndex++;
             }
         }
 
         return meshData;
     }
+}
+
 }
 
 public class MeshData
